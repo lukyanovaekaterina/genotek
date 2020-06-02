@@ -1,0 +1,60 @@
+html,
+body {
+  height: 100%;
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0; 
+
+}
+
+
+  body {
+    font-family: 'ALSStory', sans-serif;
+    vertical-align: baseline;
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+ }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.button {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+.ul,
+p,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.wrapper{
+  overflow: hidden;
+  position: relative;
+}
+
+.maincontent{
+  height: 100%;
+  transition: transform 1s;
+}

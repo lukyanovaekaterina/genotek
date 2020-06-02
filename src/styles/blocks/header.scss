@@ -1,0 +1,35 @@
+.header__content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav{
+
+&__list{
+  display: flex;
+  flex-direction: row;
+}
+
+&__icon{
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  background-color: var(--brownish-grey);
+}
+
+&__item{
+  width: 137px;
+  height: 19px;
+  @include Text-Style;
+}
+}
+
+.logo{
+  width: 68px;
+  height: 20px;
+  @include Text-Style-6;
+  text-decoration: none;
+}
+
+

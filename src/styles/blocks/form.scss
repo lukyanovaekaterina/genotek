@@ -1,0 +1,29 @@
+.form{
+
+  &__login{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+
+.form__input{
+height: 58px;
+background-color: transparent;
+border-style: none none solid none;
+border-color: #ffffff;
+padding: 16px;
+color: #ffffff;
+outline: none;
+}
+
+.button__login{
+  width: 214px;
+  height: 50px;
+  border-radius: 29.5px;
+  border: solid 1px #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  margin: 45px 0px;
+}

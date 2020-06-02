@@ -1,0 +1,20 @@
+.content{
+
+  &__heading{
+    width: 714px;
+    height: 38px;
+    @include Text-Style-5;
+  }
+
+  &__message{
+    width: 485px;
+    height: 48px;
+    @include Text-Style-2;
+  }
+}
+
+.foto__img{
+  width: 1300px;
+  height: 450px;
+  object-fit: contain;
+}

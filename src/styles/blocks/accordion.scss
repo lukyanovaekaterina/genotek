@@ -1,0 +1,53 @@
+.accordion{
+  padding: 0;
+  background-color: #142536;
+  margin-top: -4px;
+
+  &__item{
+    display: flex;
+    width: 1300px;
+    height: 88px;
+    background-color:#142536;
+    align-items: center;
+    border-bottom: solid 1px #405265;
+  }
+
+  &__text{
+    width: 678px;
+    height: 28px;
+    @include Text-Style-7;
+    padding-left: 45px;
+  }
+
+  &__panel{
+    display: none;
+  &.active{
+    display: flex;
+    flex-direction: row;
+    background-color: #142536;
+    padding-left: 45px;
+    margin: 30px auto;      
+    }
+  }
+
+  &___left{
+    height: 368px;
+  }
+
+  &__reiht{
+    display: flex;
+    align-items: center;
+  }
+
+  &__message{
+    width: 693px;
+    @include Text-Style-3;
+    padding-right: 118px;
+  }
+
+  &__foto{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+  }
+}

@@ -15,6 +15,7 @@ const uglify = require('gulp-uglify');
 const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
+const imagemin = require('gulp-imagemin');
  
 const env = process.env.NODE_ENV;
  
@@ -89,6 +90,12 @@ task('icons', () => {
    }))
    .pipe(dest(`${DIST_PATH}/images/icons`));
 });
+
+task('images', () => {
+  return src('src/images/img/*.{jpg,png}')
+  .pipe(imagemin())
+  .pipe(dest('dist/images/img'));
+ });
  
 task('server', () => {
  browserSync.init({
@@ -104,13 +111,14 @@ task('watch', () => {
  watch('./src/*.html', series('copy:html'));
  watch('./src/scripts/*.js', series('scripts'));
  watch('./src/images/icons/*.svg', series('icons'));
+ watch('./src/images/img/*.{png, jpg}', series('images'));
 });
  
  
 task('default',
  series(
    'clean',
-   parallel('copy:html', 'styles', 'scripts', 'icons'),
+   parallel('copy:html', 'styles', 'scripts', 'icons', 'images'),
    parallel('watch', 'server')
  )
 );
@@ -118,5 +126,5 @@ task('default',
 task('build',
  series(
    'clean',
-   parallel('copy:html', 'styles', 'scripts', 'icons'))
+   parallel('copy:html', 'styles', 'scripts', 'icons', 'images'))
 );

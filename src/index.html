@@ -3,10 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="main.min.css"> 
+  <title>Genotek</title>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <div class="wrapper">
+    <div class="maincontent">
+      <div class="header">
+        <div class="header__content">
+          <a href="#" class="logo">GENOTEK</a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <p class="nav__time">неделю назад</p>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__lcabinet">
+                  <svg class="nav__icon">
+                    <use xlink:href="images/icons/sprite.svg#shape-copy-29">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav__item">
+                <p class="nav__access">доступно только мне</p>
+              </li>
+            </ul>
+          </nav>
+
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="content__title">
+          <h2 class="content__heading">
+            Подарочный набор для сдачи ДНК-теста доставлен
+          </h2>
+          <p class="content__message">
+            Спасибо, что выбрали Genotek! На упаковке вы найдете подробную инструкцию как сдать ДНК-тест.
+          </p>
+        </div>
+        <div class="content__foto">
+          <img src="images/img/rectangle-copy-25.png" class="foto__img">
+        </div>
+        <ul class="accordion">
+          <li class="accordion__item">
+            <p class="accordion__text">Как подарить набор другу, чтобы он создал свой личный кабинет?</p>
+          </li>
+            <ul class="accordion__panel">
+              <li class="accordin__left">
+                <p class="accordion__message">
+              Все просто! На подарочной упаковке ДНК-теста указан временный логин и пароль, который защищен стираемой полосой. 
+Человеку, который получил ДНК-тест в подарок, нужно ввести временный логин и пароль на странице входа в личный кабинет lk.genotek.ru. После этого ему будет предложено зарегистрироваться или указать данные уже зарегистрированного пользователя, ввести номер пробирки и вызвать курьера для доставки биоматериала в лабораторию. 
+Обратите внимание, что по умолчанию вы не получите доступ к результатам ДНК-теста того, кому вы подарили тест. Но вы можете попросить вашего близкого поделиться с вами результатами в его настройках профиля.
+                </p>              
+              </li>
+              <li class="accordion__reiht">
+                <img src="images/img/box-personal-copy-2.png" alt="#" class="accordion__foto">
+              </li>
+            </ul>
+          <li class="accordion__item">
+            <p class="accordion__text">Хочу активировать ДНК-тест в этом личном кабинете</p>
+          </li>
+            <ul class="accordion__panel">
+            <li class="accordin__left">
+              <p class="accordion__message">
+                На подарочной упаковке ДНК-теста указан временный логин и пароль, который защищен стираемой полосой. Пожалуйста, введите их ниже. После ввода временных данных, вы сможете ввести номер пробирки и вызвать курьера для доставки биоматериала в лабораторию. 
+              </p>
+              <div class="form__login">
+              <label for="login" class="form__label">
+                  <input type="text" class="form__input" name="login" placeholder="Логин" required>
+              </label>
+              <label class="form__label">
+                  <input type="password" class="form__input" name="password" placeholder="Пароль" required>
+              </label>
+              <button type="submit" class="button__login">Активировать ДНК-тест
+              </button>
+              </div>
+
+            </li>
+            <li class="accordion__reiht">
+              <img src="images/img/box-personal-copy-2.png" alt="#" class="accordion__foto">
+            </li>
+
+            
+            </ul>
+        </ul>
+      </div>
+
+    </div>
+  </div>
   <script src="main.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+@mixin Text-Style{
+  font-family: ALSStory;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+
+@mixin Text-Style-2 {
+  font-family: ALSStory;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+@mixin Text-Style-3 {
+  font-family: ALSStory;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+@mixin Text-Style-5 {
+  font-family: ALSStory;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+@mixin Text-Style-6 {
+  font-family: ALSStory;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 1.5px;
+  color: var(--battleship-grey);
+}
+
+@mixin Text-Style-7 {
+  font-family: ALSStory;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+
+
+
+
+
